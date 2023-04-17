@@ -9,11 +9,11 @@ This application include some few function:
 <img width="675" alt="check-email-and-password" src="https://user-images.githubusercontent.com/49902173/232633758-ce9211e5-fe76-40b3-8de1-f63e1691e853.png">
 
 
-2.registration function(after registering an account you should go to your email and activate your account, so you should use a real email to register)
+2.registration function
 <img width="639" alt="register-successfully" src="https://user-images.githubusercontent.com/49902173/232633716-e3f860a1-79ac-44b8-896b-4ea4427086e0.png">
 <img width="804" alt="activation-token-will-be-sent-to-your-resigtered-email" src="https://user-images.githubusercontent.com/49902173/232633911-a7557505-  9a93-423a-971a-d65bcbe22112.png">
 
-3.forgot password function(This also require your email address. Then go to email to set up your new password)
+3.forgot password function
 <img width="626" alt="tokenSent-to-email" src="https://user-images.githubusercontent.com/49902173/232633792-8ca1053d-b068-488c-9076-9c22de356f27.png">
 <img width="603" alt="Cannot-Use-the-same-link-to-setup-newPassword" src="https://user-images.githubusercontent.com/49902173/232633807-e16a10e8-d5af-4e42- aa3d-4c7d6c38c515.png">
 <img width="718" alt="Reset-password-send-to-your-email" src="https://user-images.githubusercontent.com/49902173/232633844-33033f92-385f-4458-a6b1-5b6400037bf3.png">
@@ -42,20 +42,20 @@ The knowledge that have been used in this project:
 
 Backend: N-tier structure
 
-Spring boot: basic concept of dependency Injection
+Spring boot: basic concept of dependency Injection,
                  Annotation- @Get @Post @Put @Autowire @Entity......
-                 Spring boot Security
-                 javamail API    
+                 Spring Security,
+                 javamail API,
                  
 Database MySQL:  schema design knowledge,
-                 Joining table/ connect table
+                 Joining table/ connect table,
                  Doing Query from the database
 
-Frontend: Thymeleaf(HTML)
-          javascript(search customer,
-                     from restriction rules)
-          css(UI design)
-          Bootstrap
+Frontend: Thymeleaf(HTML),
+          Javascript(search customer,
+                     from restriction rules),
+          CSS(UI design)
+          Bootstrap,
           For phone number validation format I have use the the API which given from 
           twilio: : https://www.twilio.com/blog/validate-phone-number-input
 
