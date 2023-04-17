@@ -1,0 +1,27 @@
+body {
+  background-color: #2F455C;
+}
+
+#form{
+        width: 700px;
+        margin: 70px auto 0 auto;
+        padding: 70px 20px 70px 20px;
+        background-color:#248BD6;
+        border-radius: 10px;
+        font-size: 20px;
+        position:relative;
+        top:-45px;
+}
+
+h2 p{
+ font-weight:700;
+ color:#ffffff;
+}
+
+.submitBtn{
+    background-color:#C6CDFF;
+    border: whitesmoke solid;
+    border-radius: 20px;
+    border-width: 2px;
+    font-weight:700;
+}

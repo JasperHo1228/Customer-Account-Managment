@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin User Registration</title>
+</head>
+<body>
+<div th:replace = "adminData/admin_login/base::navbar-home"></div>
+<br>
+<section>
+    <!-- registration form-->
+    <div class ="container">
+        <div class = "row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                <!-- success registration-->
+                <div th:if="${param.success}">
+                    <div class = "alert alert-info">You've successfully registered. Please go to your email to verify!</div>
+                </div>
+
+                <form th:action="@{/cms-admin-registration}" th:object="${adminUser}" method="post"
+                class = "class form-inline justify-content-center">
+                    <h1 class="text-center"> Register </h1>
+                    <div class="form-group">
+                        <label class = "control-label" for = "firstName">
+                        </label>
+                        <input id="firstName" class="form-control"
+                               th:field="*{firstName}"
+                               th:errorClass="is-invalid"
+                               th:value="*{firstName}"
+                               placeholder="First Name"
+                               name = "firstName"
+                               />
+
+                        <div
+                              th:if="${#fields.hasErrors('firstName')}"
+                              th:errors="*{firstName}"
+                              class="invalid-feedback"
+                           >
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label class = "control-label" for = "lastName">
+                        </label>
+                        <input id="lastName"
+                               class="form-control"
+                               th:field="*{lastName}"
+                               th:errorClass="is-invalid"
+                               placeholder="Last Name"
+                               th:value="*{lastName}"
+                               name = "lastName"
+                               autofocus/>
+
+                        <div th:if="${#fields.hasErrors('lastName')}"
+                           th:errors="*{lastName}"
+                           class = "invalid-feedback">
+                        </div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label class = "control-label" for = "email">
+                        </label>
+                        <input id="email" class="form-control"
+                               th:field="*{email}"
+                               th:errorClass="is-invalid"
+                               placeholder="name@example.com"
+                               th:value="*{email}"
+                               name = "email"
+                        />
+
+                        <div th:if="${#fields.hasErrors('email')}"
+                             th:errors="*{email}"
+                             class = "invalid-feedback"></div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label class = "control-label">
+                        </label>
+                        <input type="password"
+                               value="FakePSW"
+                               class="form-control"
+                               th:field="*{password}"
+                               th:errorClass="is-invalid"
+                               th:value="*{password}"
+                               placeholder="Password"
+                               disallowedwords="{{email}}"/>
+
+                        <div th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
+                             class = "invalid-feedback" ></div>
+                    </div>
+
+                    <div class=" form-group">
+                        <label class = "control-label">
+                        </label>
+                        <input type="password"
+                               value="FakePSW"
+                               class="form-control"
+                               th:field="*{re_type_password}"
+                               th:errorClass="is-invalid"
+                               th:value = "*{re_type_password}"
+                               placeholder="Re-type your Password" />
+
+                        <div th:if="${#fields.hasErrors('re_type_password')}" th:errors="*{re_type_password}"
+                             class = "invalid-feedback" ></div>
+                    </div>
+
+
+                    <p><div class ="form-group">
+                        <div class="mx-auto justify-content-center" style="text-align:center">
+                            <button type="submit" class="btn btn-primary btn-lg ">Create your account</button>
+                        </div>
+
+                        <div class="row justify-content-center" style="text-align:center">
+                            <p>Already became as our Admin? <a href ="/" th:href ="@{/cms_admin-sign-in}">Login here
+                            </a></p></p>
+
+                        </div>
+                    </div>
+                </form>
+                    </div>
+        </div>
+       </div>
+   </div>
+ </div>
+</section>
+
+</body>
+</html>

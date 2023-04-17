@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+<div th:replace = "adminData/admin_login/base::navbar-home"></div>
+<section>
+    <div class="login">
+                <br>
+                <form th:action="@{/cms_admin-sign-in}" method="POST"   id="form">
+                    <h1 class="text-center">User Login</h1>
+                    <div th:if="${param.error}" id="dangerAlert">
+                        <div class="alert alert-danger">
+                          Invalid Email or Password!
+                        </div>
+                    </div>
+
+                    <div th:if="${param.Logout}" id="LogoutAlert">
+                        <div class = "alert alert-danger">Logged out</div>
+                    </div>
+
+                    <div class = "input-login">
+                        <input type="text" class="text-input" id="username" name="username" autocomplete="off" placeholder = " "/>
+                        <span></span>
+                        <label class="input-label" for = "username"> Username </label>
+                    </div>
+                    <br>
+                    <div class = "input-login">
+                        <input type= "password"  id="password" name="password" autocomplete="off" class="text-input"  placeholder = " "/>
+                        <span></span>
+                        <label class="input-label" for = "password"> Password </label>
+                        <i class="far fa-eye" id="togglePassword"></i>
+                    </div>
+
+                    <div class="forgotPW" >
+                        <a  class ="PW-link" th:href = "@{/cms_admin-forgot-password}">Forgot your Password?</a>
+                    </div>
+                    <br>
+                    <button type="submit"  id="Login-submit" class = "submitBtn" >Log In</button>
+                    <br>
+        <div class="footer">
+               <div class="col-auto" id="signUp">
+                    Don't have an account?
+                        <a th:href ="@{/cms-admin-registration}" id="signUpWord">Sign up</a>
+               </div>
+        </div>
+          </form>
+        </div>
+</section>
+<script type="text/javascript" th:src="@{/customerFunction-js/ShowAndHidePassword.js}"></script>
+</body>
+</html>
+

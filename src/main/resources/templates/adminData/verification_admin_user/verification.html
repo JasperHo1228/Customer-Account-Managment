@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CM System Activation</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+            <h3 th:text = "${title}">title</h3>
+                <p>Dear <span th:text = "${content}"></span>,</p>
+
+                Thank you for your registration.
+                Click the button to activate your account and become our member!
+
+                <p>Please activate your account within 15 minutes,
+                    otherwise the account will be invalid.</p>
+
+<!--                some email will may not support HTML button such as outlook that you have tried before. So just use css style&ndash;&gt;-->
+                <br>
+                <br>
+                        <div style="text-align:center">
+                         <a th:href="${link}" style="display: inline-block;
+                                                      padding: 10px 20px;
+                                                      font-size: 16px;
+                                                      font-weight: bold;
+                                                      text-align: center;
+                                                      text-decoration: none;
+                                                      background-color: rgb(186,203,32);
+                                                      background-color: linear-gradient(90deg, rgba(186,203,32,1) 16%, rgba(213,206,29,1) 40%, rgba(8,163,9,1) 81%, rgba(56,231,48,1) 20%);
+                                                      color: #fff;
+                                                      border-radius: 50px;
+                                                      border: none;
+                                                      cursor: pointer;">Activate your account here!
+                         </a>
+                        </div>
+                <br>
+                <br>
+                Kind Regards,
+                <p>Testing company 2027</p>
+
+             </div>
+        </div>
+    </div>
+
+</body>
+</html>

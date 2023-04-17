@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Management System</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script defer th:src="@{/customerFunction-js/CustomerCreateFormValid.js}"></script>
+    <link rel="stylesheet"  th:href="@{/stylecss/creating-customers.css}"/>
+    <script type = "text/javascript" th:src="@{/CountryCode-Phone/js/intlTelInput.js}"></script>
+    <div th:replace = "customerData/base::navbar-profile"></div>
+</head>
+<body>
+<br>
+<div class = "container">
+  <form th:action="@{/customerData/customers/{id}(id = ${customer.id})}"
+        th:object = "${customer}" th:method="PUT" id = "form">
+
+                      <!--onsubmit= "validateInputs(event)">-->
+                      <h1 class = "text-center">Update Customer</h1>
+
+                      <!--Customer duplicate-->
+                      <div th:if="${error}" class="alert alert-danger" id="dangerAlert">
+                          <span th:text="${error}"></span>
+                      </div>
+                      <!--Customer saved successfully-->
+                      <div th:if="${success}" class="alert alert-info" id="successAlert">
+                         <span th:text="${success}"></span>
+                      </div>
+                  <!--firstName input field-->
+                  <div class="input-control">
+                      <label for = "firstName">
+                          Customer First Name
+                      </label>
+                      <input id="firstName"
+                             th:field="*{firstName}"
+                             name = "firstName"
+                             type = "text"
+                             onblur="checkFirstName(this)"/>
+                      <div class = "error"></div>
+                  </div>
+
+                  <!--lastName input field-->
+                  <div class="input-control">
+                      <label for = "lastName">
+                          Customer Last Name
+                      </label>
+                      <input id="lastName"
+                             th:field="*{lastName}"
+                             name = "lastName"
+                             type = "text"
+                             onblur=" checkLastName(this)"/>
+                      <div class = "error"></div>
+                  </div>
+
+                  <!--Phone number input field-->
+                  <div class="input-control">
+                      <label for = "phoneNo">
+                          Customer Phone Number
+                      </label>
+                      <br>
+                      <input id="phoneNo"
+                             type="tel"
+                             th:field = "*{phoneNo}"
+                             th:value = "*{phoneNo}"
+                             placeholder = "+CountryCode"
+                             name = "phoneNo"
+                             onblur="checkPhone(this)"/>
+                      <span id="phone-msg" class="" name="phone_msg"> </span>
+                  </div>
+                  <br>
+
+                 <!--Email input field-->
+                  <div class = "input-control" id="emailDiv">
+                      <label for = "email" class="email">
+                          Customer Email
+                      </label>
+                      <input
+                              id = "email"
+                              name = "email"
+                              type = "text"
+                              th:field = "*{email}"
+                              onblur = "checkEmail(this)"
+                              placeholder="name@example.com"/>
+                      <div class="error"> </div>
+                  </div>
+                  <br>
+
+                  <div class = "box-footer">
+                      <button id = "submit" type = "submit" th:onclick = "validateInputs(event)" class = "btn btn-primary" >Submit</button>
+                  </div>
+                  </form>
+                </div>
+</body>
+</html>

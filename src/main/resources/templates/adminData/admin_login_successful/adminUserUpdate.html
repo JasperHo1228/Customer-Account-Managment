@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Data Update</title>
+    <link rel="stylesheet"  th:href="@{/stylecss/UpdateMyProfileData.css}"/>
+</head>
+<body>
+
+<div th:replace="customerData/base::navbar-profile"></div>
+<form id="form" th:method="PUT" th:action="@{/adminUser/myProfile/updatePersonalData/successfully}" th:object="${adminUser}">
+    <input type="hidden" name="id" th:field="*{id}"/>
+
+    <div th:if="${error}" class="alert alert-danger" id="dangerAlert" role="alert">
+        <span th:text =${error} ></span>
+    </div>
+
+    <div class="alert alert-info" role="alert" id="successAlert"
+         th:if="${message}">
+        <span th:text="${message}" ></span>
+    </div>
+    <h2  class = "text-center">Update Your Information</h2>
+
+    <div class="input-control">
+        <label class="control-label" for="firstName">
+            First Name:
+        </label>
+        <input name="firstName" type="text" th:field="*{firstName}" class="firstName"
+               id="firstName" onblur="checkFirstName(this)"/>
+        <div class="error"> </div>
+    </div>
+
+    <div class="input-control">
+        <label class="control-label" for="lastName">
+            Last Name:
+        </label>
+        <input name="lastName" type="text" th:field="*{lastName}" class="lastName" id="lastName"
+               onblur=" checkLastName(this)"/>
+        <div class="error"> </div>
+    </div>
+
+    <div class="input-control">
+        <label class="control-label" for="email">
+            Email:
+        </label>
+        <input name="email" type="text" class="email" th:field="*{email}"
+               id="email"  onblur = "checkEmail(this)"/>
+        <div class="error" ></div>
+    </div>
+    <button type="submit" id="submit" th:onclick = "validateInputs(event)">Confirm</button>
+</form>
+    <script type= "text/javascript" th:src="@{/customerFunction-js/AdminUserUpdate.js}"></script>
+</body>
+</html>
+

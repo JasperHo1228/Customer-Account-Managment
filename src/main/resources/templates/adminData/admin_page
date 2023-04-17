@@ -1,0 +1,6 @@
+@RequestParam("token") === http://localhost:8080/activation?token="
+
+Next problem how about the email failed to send??
+How to detect it to let the user know this error happened and stop saving
+the data in database???
+Then tell them to register again

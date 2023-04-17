@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyProfile</title>
+    <link rel="stylesheet" th:href="@{/stylecss/login_css/Profile.css}"/>
+</head>
+<body>
+<div th:replace="customerData/base::navbar-profile"></div>
+
+<div class="container" style="text-align:center">
+    <h2>My Profile</h2>
+    <form id="form" th:action="@{/adminUser/myProfile/updatePersonalData}" method="get" th:object="${adminUser}">
+
+        <p><label class="label">First Name:</label>
+            <span class="content" th:text="${firstName}" >
+        </span>
+        </p>
+        <p><label class="label">Last Name:</label>
+            <span class="content" th:text="${lastName}">
+        </span>
+        </p>
+        <p><label class="label">Email Address:</label>
+            <span class="content"th:text="${email}">
+        </span>
+        </p>
+        <p><label class="label">My Role:</label>
+            <span class="content" th:text="${role}">
+        </span>
+        </p>
+        <button type="submit" class="submitBtn">Update</button>
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.inputBox{
+   position:relative;
+   width: 500px;
+   top:50%
+   margin-bottom:25px;
+   display: flex;
+}
+
+.inputBox input:first-child {
+  float: left;
+  margin-right: 40px;
+}
+.ListTitle h1{
+   font-weight:700;
+}
+.text-input{
+     padding:0.8rem;
+     width:50%;
+     height:100%;
+     border:2px solid rgb(0,0,0);
+     background: #fff;
+     border-radius:20px;
+     outline:none;
+     transition:all 0.3s;
+     color:rgb(0,0,0);
+     display: inline-block;
+     align-items: center;
+     border: 5px solid #000000;
+ }
+
+.text-input:focus{
+   border: 5px solid #ff99ff;
+}
+
+.input-label {
+     position: absolute;
+     left: 15px;
+     top: 50%;
+     transition: all 0.3s;
+     transform: translateY(-50%);
+     padding: 0 5px;
+     z-index: 0;
+     color: black;
+     cursor: text;
+     pointer-events: none;
+     font-size: 13px;
+     display:flex;
+}
+
+.input-label2 {
+     position: absolute;
+     right:40px;
+     top: 50%;
+     transform: translateY(-50%);
+     transition: all 0.3s;
+     padding: 0 5px;
+     z-index: 0;
+     color: black;
+     cursor: text;
+     pointer-events: none;
+     font-size: 13px;
+     display:flex
+     font-weight: bold;
+}
+
+
+.text-input:focus + .input-label,
+.text-input:not(:placeholder-shown):not(:focus) + .input-label{
+   top: -5px;
+   color: #000000;
+   background-color:#ff99ff;
+   font-size: 15px;
+   border-radius: 5px;
+   font-family: Impact;
+}
+
+.text-input:focus + .input-label2,
+.text-input:not(:placeholder-shown):not(:focus) + .input-label2{
+   top:-5px;
+   right:9%;
+   color: #000000;
+   background-color:#ff99ff;
+   font-size: 15px;
+   border-radius: 5px;
+   font-family: Impact;
+}
+
+.text-input:not(:placeholder-shown):not(:focus){
+   border: 5px solid #000000;
+}
+
+.text-input:not(:placeholder-shown):not(:focus) + .input-label{
+       top: -5px;
+       color: #ff99ff;
+       background-color:#000000;
+       font-size: 15px;
+       border-radius: 5px;
+       font-family: Impact;
+}
+
+.text-input:not(:placeholder-shown):not(:focus) + .input-label2{
+       top: -5px;
+       color: #ff99ff;
+       background-color:#000000;
+       font-size: 15px;
+       border-radius: 5px;
+       font-family: Impact;
+}
+

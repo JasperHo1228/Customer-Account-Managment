@@ -1,0 +1,124 @@
+#form{
+     width: 490px;
+     margin: 30vh auto 0 auto;
+     padding: 20px;
+     background-color: whitesmoke;
+     border-radius: 4px;
+     font-size: 17px;
+     position:relative;
+     top:-150px;
+}
+
+#form h2{
+       color:#0f2027
+       text-align:center;
+       font-weight:700;
+}
+
+#form button {
+      padding: 10px;
+      margin-top:10px;
+      width:100%;
+      color:white;
+      background-color:#FFCB98;
+      border:none;
+      border-radius:4px;
+      transition: background .5s, color .5s;
+      font-weight:700;
+      padding-top:10px;
+      margin-top:20px;
+}
+
+#form button:hover{
+     background: #FF6347;
+     box-shadow: 0 0 40px #FF6347;
+     transition: background .5s, color .5s;
+     filter: hue-rotate(20deg);
+}
+
+.input-control{
+    position:relative;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+
+.input-control input{
+        display:flex;
+        flex-direction: column;
+        font-weight:700;
+}
+
+.input-control input{
+       border: 2px solid #f0f0f0;
+       border-radius: 4px;
+       font-size: 17px;
+       padding: 8px;
+       width:100%;
+       transition: 0.5s ease;
+       font-weight:700;
+}
+
+.input-control input:focus{
+        outline: 0;
+}
+
+.input-control.success input{
+     box-shadow :0 0 10px #09c372;
+      transition: 0.3s ease;
+     border-color: #09c372;
+     filter: hue-rotate(20deg);
+     font-weight:700;
+}
+
+.input-control.error input{
+     box-shadow: 0 0 15px #ff3860;
+     transition: 0.3s ease;
+     filter: hue-rotate(20deg);
+     border-color:#ff3860;
+     font-weight:700;
+}
+
+.input-control .error{
+      color: #ff3860;
+      font-size:13px;
+      height: 13px;
+      font-weight:700;
+}
+
+#dangerAlert{
+   text-align:center;
+   font-weight:700;
+}
+
+#successAlert{
+ text-align:center;
+ font-weight:700;
+}
+
+#togglePassword{
+   position:absolute;
+   top:50%;
+   right:8px;
+   color:#adadad;
+   font-size:17px;
+   cursor:pointer;
+   font-weight:700;
+}
+
+.input-control #togglePassword:hover{
+    color:#FFCB98;
+}
+
+.input-control #toggleRetypePassword{
+      position:absolute;
+      top:50%;
+      right:8px;
+      color:#adadad;
+      font-size:17px;
+      cursor:pointer;
+      font-weight:700;
+}
+
+.input-control #toggleRetypePassword:hover{
+    color:#FFCB98;
+}
