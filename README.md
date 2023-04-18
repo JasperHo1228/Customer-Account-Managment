@@ -50,6 +50,14 @@ This application include some few function:
 <img width="1437" alt="Screenshot 2023-04-19 at 00 21 27" src="https://user-images.githubusercontent.com/49902173/232925926-e513c189-f46c-4b43-868f-fbd7fae0b376.png">
 </p>
 
+8.Update Customer Function
+
+<p align="center"><img width="530" alt="Resriction-rule-exactly-same-as-create-customer-form" src="https://user-images.githubusercontent.com/49902173/232926298-5b66b4b0-cb27-4e4e-a46f-90358cdec0e7.png"></p>
+
+<p align="center"> 
+<img width="530" alt="update-successfully" src="https://user-images.githubusercontent.com/49902173/232926262-af38df8c-1503-4f97-b539-7b67853a953f.png"></p>
+
+
 
 More photo have been stored in the repository.                    
 
