@@ -60,8 +60,9 @@ Database MySQL: schema design, Joining table/ connect table, Doing Query from th
 Frontend: Thymeleaf(HTML), Javascript(search customer, add, update customer and update, reset password form restriction rules), CSS(UI design),Bootstrap,
 For phone number validation format I have use the the API which given from twilio: : https://www.twilio.com/blog/validate-phone-number-input
 
-
-There will be an demo video soon.
+Demo Video Part 1: https://youtu.be/Ribh8SJNaic 
+Demo Video Part 2: https://youtu.be/LUfA0d6VwHI 
+ 
 
 
 
