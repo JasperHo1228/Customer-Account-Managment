@@ -41,6 +41,16 @@ This application include some few function:
 
 6.Pagination: It will only show if there are more than 1 page. When there are more than 5 pages, it will only show 5 pages each time in the pagination.
 
+7.Search Customer Function 
+<p align="center">
+<img width="1437" alt="Screenshot 2023-04-19 at 00 20 39" src="https://user-images.githubusercontent.com/49902173/232925909-f5ddcf9e-e752-43eb-8fb4-b3a26b078b36.png">
+</p>
+
+<p align="center">
+<img width="1437" alt="Screenshot 2023-04-19 at 00 21 27" src="https://user-images.githubusercontent.com/49902173/232925926-e513c189-f46c-4b43-868f-fbd7fae0b376.png">
+</p>
+
+
 More photo have been stored in the repository.                    
 
 TOOLS that have been used:
