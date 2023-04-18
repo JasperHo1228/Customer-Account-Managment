@@ -23,14 +23,11 @@ This application include some few function:
 
 <p align="center"><img width="718" alt="" src="https://user-images.githubusercontent.com/49902173/232633844-33033f92-385f-4458-a6b1-5b6400037bf3.png"></p>
 
-
-
 4.update personal information(name, email, password):
 
 <p align="center"><img width="708" alt="update-restriction-rule" src="https://user-images.githubusercontent.com/49902173/232634001-87621690-6785-4bd9-b433-e4165ec7c1c0.png"></p>
 
 <p align="center"><img width="571" alt="Screenshot 2023-04-15 at 19 16 29" src="https://user-images.githubusercontent.com/49902173/232634031-e1e627c0-5343-44bb-9245-6b8c746a854c.png"></p>
-
 
 5.Add new customer, Update customer, Delete Customer, Search Customer from customer list(by typing there first and last name):
 <p align="center">
@@ -38,8 +35,12 @@ This application include some few function:
 
 <p align="center"><img width="1154" alt="result" src="https://user-images.githubusercontent.com/49902173/232634497-4bcba2e5-104d-4791-b3f9-488e0ddd6122.png"></p>
 
+6.Update Customer Function
 
-6.Pagination: It will only show if there are more than 1 page. When there are more than 5 pages, it will only show 5 pages each time in the pagination.
+<p align="center"><img width="530" alt="Resriction-rule-exactly-same-as-create-customer-form" src="https://user-images.githubusercontent.com/49902173/232926298-5b66b4b0-cb27-4e4e-a46f-90358cdec0e7.png"></p>
+
+<p align="center"> 
+<img width="530" alt="update-successfully" src="https://user-images.githubusercontent.com/49902173/232926262-af38df8c-1503-4f97-b539-7b67853a953f.png"></p>
 
 7.Search Customer Function 
 <p align="center">
@@ -50,12 +51,7 @@ This application include some few function:
 <img width="1437" alt="Screenshot 2023-04-19 at 00 21 27" src="https://user-images.githubusercontent.com/49902173/232925926-e513c189-f46c-4b43-868f-fbd7fae0b376.png">
 </p>
 
-8.Update Customer Function
-
-<p align="center"><img width="530" alt="Resriction-rule-exactly-same-as-create-customer-form" src="https://user-images.githubusercontent.com/49902173/232926298-5b66b4b0-cb27-4e4e-a46f-90358cdec0e7.png"></p>
-
-<p align="center"> 
-<img width="530" alt="update-successfully" src="https://user-images.githubusercontent.com/49902173/232926262-af38df8c-1503-4f97-b539-7b67853a953f.png"></p>
+8.Pagination: It will only show if there are more than 1 page. When there are more than 5 pages, it will only show 5 pages each time in the pagination.
 
 
 
