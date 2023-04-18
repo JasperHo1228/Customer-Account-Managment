@@ -14,7 +14,7 @@ This application include some few function:
 
 2.registration function: <p align="center"><img width="639" alt="register-successfully" src="https://user-images.githubusercontent.com/49902173/232633716-e3f860a1-79ac-44b8-896b-4ea4427086e0.png"></p> 
 
-<p align="center"><img width="804" alt="activation-token-will-be-sent-to-your-resigtered-email" src="https://user-images.githubusercontent.com/49902173/232633911-a7557505-  9a93-423a-971a-d65bcbe22112.png"></p>
+<p align="center"><img width="804" alt="" src="https://user-images.githubusercontent.com/49902173/232633911-a7557505-  9a93-423a-971a-d65bcbe22112.png"></p>
 
 3.forgot password function: 
 <p align="center"><img width="626" alt="tokenSent-to-email" src="https://user-images.githubusercontent.com/49902173/232633792-8ca1053d-b068-488c-9076-9c22de356f27.png"></p>
