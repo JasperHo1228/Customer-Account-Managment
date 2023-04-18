@@ -19,9 +19,9 @@ This application include some few function:
 3.forgot password function: 
 <p align="center"><img width="626" alt="tokenSent-to-email" src="https://user-images.githubusercontent.com/49902173/232633792-8ca1053d-b068-488c-9076-9c22de356f27.png"></p>
 
-<p align="center"><img width="603" alt="Cannot-Use-the-same-link-to-setup-newPassword" src="https://user-images.githubusercontent.com/49902173/232633807-e16a10e8-d5af-4e42- aa3d-4c7d6c38c515.png"></p>
+<p align="center"><img width="603" alt="" src="https://user-images.githubusercontent.com/49902173/232633807-e16a10e8-d5af-4e42- aa3d-4c7d6c38c515.png"></p>
 
-<p align="center"><img width="718" alt="Reset-password-send-to-your-email" src="https://user-images.githubusercontent.com/49902173/232633844-33033f92-385f-4458-a6b1-5b6400037bf3.png"></p>
+<p align="center"><img width="718" alt="" src="https://user-images.githubusercontent.com/49902173/232633844-33033f92-385f-4458-a6b1-5b6400037bf3.png"></p>
 
 
 
