@@ -1,6 +1,6 @@
 # Customer-Account-Managment
 
-The aim of building this application is to get familiar with using REST API, spring boot and mySQL.
+The aim of building this application is to get familiar with using REST API, spring boot and MYSQL.
 Also, this application is going to help the people who don't know how to code or use database, in order to manage customer data.
 
 This application include some few function:
@@ -46,8 +46,8 @@ This application include some few function:
 More photo have been stored in the repository.                    
 
 TOOLS that have been used:
-Backend Part, Spring boot and mySQL
-Frontend part, I have used javascript css and thymeleaf(HTML).
+Backend Part, Spring boot and MYSQL
+Frontend part, I have used Javascript CSS and Thymeleaf(HTML).
 
 The knowledge that have been used in this project:
 
