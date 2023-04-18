@@ -1,6 +1,6 @@
 # Customer-Account-Managment
 
-The aim of building this application is to get familiar with using REST API, spring boot and MYSQL.
+The aim of building this application is to get familiar with using REST API, Spring Boot and MYSQL.
 Also, this application is going to help the people who don't know how to code or use database, in order to manage customer data.
 
 This application include some few function:
@@ -41,7 +41,7 @@ This application include some few function:
 <p align="center"><img width="1154" alt="result" src="https://user-images.githubusercontent.com/49902173/232634497-4bcba2e5-104d-4791-b3f9-488e0ddd6122.png"></p>
 
 
-6.Pagination: It will only show if there are more than 1 page. When there are more than 5 page, it will only show 5 pages each time in the pagination.
+6.Pagination: It will only show if there are more than 1 page. When there are more than 5 pages, it will only show 5 pages each time in the pagination.
 
 More photo have been stored in the repository.                    
 
