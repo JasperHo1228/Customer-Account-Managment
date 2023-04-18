@@ -5,10 +5,8 @@ Also, this application is going to help the people who don't know how to code or
 
 This application include some few function:
 
-1.log in/log out function:
-
 <p align="center">
-<img width="675" alt="check-email-and-password" src="https://user-images.githubusercontent.com/49902173/232633758-ce9211e5-fe76-40b3-8de1-f63e1691e853.png">
+1.login/logout function:<img width="1432" alt="Screenshot 2023-04-19 at 00 17 29" src="https://user-images.githubusercontent.com/49902173/232925168-9947db98-61cc-4e2c-a888-ffbb2a3dec8e.png">
 </p>
 
 
@@ -58,7 +56,7 @@ Spring boot: basic concept of dependency Injection, Annotation- @Get @Post @Put 
 Database MySQL: schema design, Joining table/ connect table, Doing Query from the database
 
 Frontend: Thymeleaf(HTML), Javascript(search customer, add, update customer and update, reset password form restriction rules), CSS(UI design),Bootstrap,
-For phone number validation format I have use the the API which given from twilio: : https://www.twilio.com/blog/validate-phone-number-input
+For phone number validation format I have use the the API which given from twilio:https://www.twilio.com/blog/validate-phone-number-input
 
 Demo Video Part 1: https://youtu.be/Ribh8SJNaic 
 Demo Video Part 2: https://youtu.be/LUfA0d6VwHI 
