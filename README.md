@@ -1,4 +1,4 @@
-# Customer-Account-Managment
+# Customer-Managment-System
 
 The aim of building this application is to get familiar with using REST API, Spring Boot and MYSQL.
 Also, this application is going to help the people who don't know how to code or use database, in order to manage customer data.
